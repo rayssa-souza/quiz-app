@@ -1,0 +1,31 @@
+.subjects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+h1 {
+  text-align: left;
+  padding: 30px;
+}
+//tablet
+@media screen and (min-width: 767px) {
+  .subjects-container {
+    padding: 0 20px 20px;
+  }
+  h1 {
+    text-align: center;
+    padding: 40px 30px 30px;
+  }
+}
+// desktop
+@media screen and (min-width: 1200px) {
+  .subjects-container {
+    width: 100%;
+    padding: 0 100px 40px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}

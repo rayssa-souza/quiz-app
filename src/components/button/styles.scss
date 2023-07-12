@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.button {
+  width: 100%;
+  min-height: 42px;
+  padding: 3px 0;
+  background-color: white;
+  color: #403e43;
+  border: 2px solid #f2e6ff;
+  margin: 12px;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.button-large {
+  max-width: 280px;
+  position: relative;
+}
+
+.button-icon {
+  width: 30px;
+  height: 30px;
+  color: #86608e;
+  font-size: 20px;
+  position: absolute;
+  left: 10px;
+  padding-top: 2px;
+  border-radius: 50%;
+  background-color: #f4eefc;
+}
+
+.button-count-icon {
+  width: 30px;
+  height: 30px;
+  padding: 8px 0;
+
+  font-size: 9px;
+  border-radius: 50%;
+  background-color: #f4eefc;
+  font-weight: bold;
+  position: absolute;
+  left: 8px;
+}
+
+.button-span {
+  font-weight: 700;
+}
+.button-span-max-length {
+  inline-size: 180px;
+  // overflow-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (min-width: 767px) {
+  .button {
+    height: 55px;
+    margin: 15px;
+    border: 2px solid #f2e6ff;
+    font-size: 15px;
+  }
+  .button-large {
+    max-width: 487px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button {
+    height: 55px;
+    margin: 10px;
+    border: 2px solid #f2e6ff;
+    font-size: 15px;
+  }
+  .button-large {
+    max-width: 320px;
+  }
+
+  .button:hover {
+    transition: all 0.2s ease-out;
+    background-color: #403e43;
+
+    .button-count-icon,
+    .button-icon {
+      background-color: #403e43;
+      border: 2px solid white;
+      padding: 6px 0;
+      color: white;
+    }
+    .button-icon {
+      padding-top: 2px;
+    }
+
+    span {
+      color: white;
+    }
+
+    border: #403e43;
+    .button-icon {
+      svg {
+        color: white;
+      }
+    }
+  }
+}

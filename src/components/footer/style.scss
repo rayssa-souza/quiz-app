@@ -1,0 +1,31 @@
+.footer {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  align-items: center;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
+.footer-author-link,
+.footer-api-link {
+  text-decoration: none;
+  color: #86608e;
+}
+
+.footer-author-link {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 767px) {
+  .footer-author-link {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-author-link:hover {
+    color: #403e43;
+  }
+}

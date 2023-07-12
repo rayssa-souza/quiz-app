@@ -1,0 +1,32 @@
+body {
+  background-color: #f2e6ff;
+}
+
+// mobile
+.page-layout {
+  width: calc(100% - 40px);
+  background-color: white;
+  min-height: calc(100vh - 40px);
+  margin: 20px auto;
+  border-radius: 20px;
+  outline: 2px solid white;
+  outline-offset: 8px;
+}
+
+// tablet
+
+@media screen and (min-width: 767px) {
+  .page-layout {
+    max-width: 767px;
+    width: calc(100% - 60px);
+    min-height: calc(100vh - 60px);
+    margin: 30px auto;
+  }
+}
+
+// desktop
+@media screen and (min-width: 1200px) {
+  .page-layout {
+    max-width: 1200px;
+  }
+}

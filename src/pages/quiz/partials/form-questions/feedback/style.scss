@@ -1,0 +1,56 @@
+.feedback {
+  width: 100%;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.feedback-correct-answer-icon,
+.feedback-incorrect-answer-icon {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  animation: tremble 0.5s;
+}
+.feedback-text {
+  font-size: 16px;
+  inline-size: 300px;
+  text-align: center;
+  word-break: break-word;
+}
+.feedback-span {
+  font-weight: 700;
+}
+
+@keyframes tremble {
+  0% {
+    transform: rotate(5deg);
+  }
+
+  25% {
+    transform: rotate(-6deg);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  75% {
+    transform: rotate(-6deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .feedback-correct-answer-icon,
+  .feedback-incorrect-answer-icon {
+    font-size: 50px;
+  }
+  .feedback-text {
+    font-size: 20px;
+  }
+}

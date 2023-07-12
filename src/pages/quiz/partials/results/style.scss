@@ -1,0 +1,32 @@
+.results-page {
+  width: 100%;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.results-page-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.results-page-message,
+.results-page-score {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.results-page-span {
+  font-weight: 700;
+  color: #86608e;
+}
+@media screen and (min-width: 767px) {
+  .results-page-icon {
+    margin: 20px 0;
+    font-size: 80px;
+  }
+  .results-page-message,
+  .results-page-score {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}

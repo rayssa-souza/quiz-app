@@ -1,0 +1,108 @@
+.difficulty-page {
+  padding: 35px 0;
+}
+
+.difficulty-page-category,
+.difficulty-page-refresh {
+  min-height: 74vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.difficulty-page-icon {
+  margin: 40px 0;
+  font-size: 64px;
+  animation: scale-icon 2.5s;
+}
+
+.difficulty-page-span {
+  font-size: 24px;
+}
+.difficult-page-span-level {
+  color: #aea3b0;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.difficulty-page-refresh-icon {
+  width: 70px;
+  height: 70px;
+  padding: 7px 10px;
+  margin-bottom: 15px;
+  font-size: 50px;
+  color: #86608e;
+  border-radius: 50%;
+  background-color: #f4eefc;
+  cursor: pointer;
+}
+
+@keyframes scale-icon {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+// tablet
+@media screen and (min-width: 767px) {
+  .difficulty-page {
+    padding: 0;
+    width: calc(100% - 100px);
+    margin: 0 50px;
+  }
+  .difficulty-page-icon {
+    font-size: 70px;
+  }
+  .difficulty-page-span {
+    font-size: 30px;
+  }
+  .difficult-page-span-level {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .difficulty-page-refresh-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 60px;
+  }
+  .difficulty-page-refresh-text {
+    font-size: 20px;
+  }
+}
+// desktop
+@media screen and (min-width: 1200px) {
+  .difficulty-page {
+    padding: 40px 0;
+    width: calc(100% - 600px);
+    margin: 0 300px;
+  }
+  .difficulty-page-icon {
+    font-size: 80px;
+    margin: 50px 0;
+  }
+  .difficulty-page-span {
+    font-size: 30px;
+  }
+  .difficult-page-span-level {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .difficulty-page-refresh-icon {
+    font-size: 60px;
+  }
+  .difficulty-page-refresh-icon:hover {
+    background-color: #403e43;
+    border: 2px solid white;
+    padding: 6px 8px;
+    svg {
+      color: white;
+    }
+  }
+}

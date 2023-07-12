@@ -1,0 +1,34 @@
+.api-error {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.api-error-icon {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  color: #86608e;
+  font-size: 40px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  background-color: #f4eefc;
+}
+.api-error-message {
+  font-size: 16px;
+
+  text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+  .api-error-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+  }
+  .api-error-message {
+    font-size: 20px;
+  }
+}
