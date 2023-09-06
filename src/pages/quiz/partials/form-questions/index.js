@@ -9,7 +9,7 @@ const FormQuestions = ({ questionNumber, answers, question, handleAnswer }) => {
       <br></br>
       <p className="form-questions-text">{question}</p>
       {answers.map((item, index) => (
-        <Button text={item} count={index + 1} key={'1'} onClick={() => handleAnswer(item)} />
+        <Button text={item} count={index + 1} key={index + 3} onClick={() => handleAnswer(item)} />
       ))}
     </div>
   );
