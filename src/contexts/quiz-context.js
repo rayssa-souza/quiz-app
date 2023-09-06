@@ -31,7 +31,7 @@ export default function reducer(state = intitialState, { type, payload }) {
   switch (type) {
     case actionTypes.SET_LOADING:
       return { ...state, loading: payload };
-    // repete o state atual mas muda o valor de "loading" de false para payload
+
     case actionTypes.SET_ERROR:
       return { ...state, error: payload };
     case actionTypes.SET_CATEGORIES:

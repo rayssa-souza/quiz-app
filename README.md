@@ -9,6 +9,7 @@ Live Demo: [here](https://64cd1f0a20393429e7a4a60a--clinquant-kleicha-a464e6.net
 - React Icons
 - SaSS
 - Axios
+- Clsx
 - Netlify
 - [API Open Trivia Database](https://opentdb.com/api_config.php)
 

@@ -8,7 +8,7 @@ import PageLayout from '../../components/page-layout';
 import Loading from '../../components/loading/loading';
 import FormQuestions from './partials/form-questions';
 import Feedback from './partials/form-questions/feedback';
-import ApiError from '../../components/apierror';
+import ApiError from '../../components/api-error';
 import './style.scss';
 import ResultsPage from './partials/results';
 
@@ -82,7 +82,6 @@ const QuizPage = () => {
     navigate(`/`);
   };
 
-  console.log(state);
   return (
     <div>
       <PageLayout>

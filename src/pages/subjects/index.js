@@ -1,14 +1,11 @@
 import React, { useEffect, useContext } from 'react';
-// import { BiArrowBack } from 'react-icons/bi';
 import { QuizContext, actionCreators } from '../../contexts/quiz-context';
-// import Button from '../../components/button';
 import PageLayout from '../../components/page-layout';
 import './style.scss';
 import { getSubjects } from '../../services/quiz-service';
 import SubjectTopic from './partials/subject-topic';
 import Loading from '../../components/loading/loading';
-
-import ApiError from '../../components/apierror';
+import ApiError from '../../components/api-error';
 
 const Subjects = () => {
   const { state, dispatch } = useContext(QuizContext);
@@ -24,8 +21,6 @@ const Subjects = () => {
         dispatch(actionCreators.setError(true));
         dispatch(actionCreators.setLoading(false));
       }
-
-      console.log(state);
     }
     getData();
   }, []);

@@ -13,4 +13,3 @@ const errorResponse = (err) => {
 instance.interceptors.response.use(successResponse, errorResponse);
 
 export default instance;
-// permite reutilizar as chamadas que precisam de uma configuração inicial, tipo headers e
